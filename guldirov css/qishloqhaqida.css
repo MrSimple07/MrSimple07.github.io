@@ -1,0 +1,133 @@
+.main{
+   background-image: url(../images/konstantin-kleine-V1NVvXmO_dk-unsplash.jpg);
+  
+   height: auto;
+}
+.main_header{
+    background-color: #ada093;
+    background-size: cover;
+}
+
+h2{
+    font-size: 30px;
+    text-align: center;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 15px;
+    padding-top:25px;
+}
+.main_text{
+    margin: 10px 10px;
+    font-family: 'Trebuchet MS','Lucida Sans Unicode','Lucida Grande','Lucida Sans',Arial, sans-serif;
+    font-size: 14px;
+    color: black;
+    font-size: 24px;
+    text-align: center;
+}
+
+p.head{
+    margin: 15px;
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.about_item {
+    width: 400px;
+}
+
+.about_img>img {
+    margin-left: 40px;
+}
+
+.about_img img {
+    width: 350px;
+    height: 250px;
+}
+
+.statistics {
+    background-color: #718480;
+    margin-top: 40px;
+}
+
+.stat {
+    display: flex;
+}
+.stat_num {
+    font-size: 72px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 10px;
+
+}
+
+.stat_text {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.stat_item {
+    flex: 1 1 0;
+    padding: 70px 25px;
+    text-align: center;
+    color: #fff;
+    border-left: 1px solid #b5eae0;
+    line-height: 1;
+}
+
+.stat_item:last-child {
+    border-right: 1px solid #b5eae0;
+}
+
+.sadamozor{
+    background-color: #bab3a1;
+}
+
+.sadamozor h2, .sadamozor .main_text{
+    color: black;
+}
+
+.sadomozor_photo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sadomozor_photo img{
+    width: 30%;
+    height: 30%;
+    margin-left: 15px;
+}
+
+ @media screen and (max-width: 768px){
+     body{
+         width: 100%;
+     }
+     h2{font-size: 18px;}
+
+     .main_text{
+         font-size: 14px;
+     }
+     .about {
+        display: block;
+        margin-top: 30px;
+     }
+     .about_img img {
+         width: 75%;
+         height: 150px;
+     }
+     .about_item{
+         width: 360px;
+     }
+     .about_img>img {
+         margin-bottom: 10px;
+     }
+     .stat_num{
+         font-size: 22px;
+     }
+     .stat_text{
+         font-size: 8px;
+     }
+
+ }

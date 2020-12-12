@@ -1,0 +1,143 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background: #c1b7ae;
+}
+
+.main {
+    margin: 10px;
+
+}
+
+a {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 30px;
+    text-align: center;
+    color: black;
+    padding-top: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.cards {
+    color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+}
+
+.card_all {
+    cursor: pointer;
+    margin: 7%;
+}
+.card_all_ukam{
+    cursor: pointer;
+    margin: 7%;
+    position: relative;
+    left: 50%;
+}
+
+.card_head {
+    background-color: #fff;
+    position: relative;
+    text-align: center;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+}
+
+.card_img {
+    width: 40%;
+    border-radius: 50%;
+    padding-top: 5%;
+    border-bottom-left-radius: inherit;
+}
+
+.card_img_5 {
+    width: 32%;
+    border-radius: 50%;
+    padding-top: 4%;
+    border-bottom-left-radius: inherit;
+}
+.card_img_ozim{
+     width: 30%;
+     border-radius: 50%;
+     padding-top: 5%;
+     border-bottom-left-radius: inherit;
+}
+
+.card_body {
+    text-align: center;
+    background-color: #669cf9;
+    padding: 14px;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+}
+
+.card_all a {
+    color: black;
+}
+
+h4,
+p {
+    padding: 5px;
+    color: black;
+}
+
+h4 {
+    font-size: 30px;
+    color: black;
+}
+
+.card_all:hover {
+    box-shadow: 3px 3px 2px 3px #9fb9e6;
+    transition: 0.5s;
+}
+
+.oila_malumot::after {
+    content: "";
+    display: block;
+    width: 13%;
+    height: 2px;
+    text-align: center;
+    background-color: #d06666;
+    margin: 30px auto;
+}
+
+@media screen and (max-width: 768px) {
+    .maktab_head {
+        font-size: 21px;
+    }
+
+    .maktab_foto {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .cards {
+        display: block;
+        padding-left: 20px;
+    }
+
+    h2,
+    .maktab_foto {
+        font-size: 21px;
+    }
+
+    .yutuqlar_head-text {
+        font-size: 16px;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+
+    .card_body {
+        font-size: 16px;
+    }
+}

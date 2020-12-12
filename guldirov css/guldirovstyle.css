@@ -1,0 +1,213 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body, html{
+    width: 100%;
+    height: 100%;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+li{
+    list-style-type: none;
+}
+
+body{
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.header {
+   
+    background-color: #8b827a;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 7000;
+    width: 100%;
+    height: 50px;
+}
+
+.header_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_logo {
+    font-weight: 500;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    padding-left: 15px;
+    padding-top: 3px ;
+}
+
+.topnav {
+    font-size: 18px;
+    display: flex;
+}
+
+.nav_link {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    transition: color 0.2 linear;
+    position: relative;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav_link::after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    display: block;
+    background-color: skyblue;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.4s linear;
+    text-decoration: none;
+}
+
+.nav_link:hover {
+    color: skyblue;
+    transition: opacity 0.3s ;
+}
+
+.nav_link:hover::after {
+    opacity: 1;
+}
+
+.intro{
+    background-image: url(../images/fon1.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+}
+
+.topnav .icon{
+    display: none;
+}
+
+ .intro_inner{
+     color: whitesmoke;
+     width: 100%;
+     height: auto;
+     display: flex;
+ }
+
+ .intro_text{
+     position: absolute;
+     top: 36%;
+     padding: 0 20px;
+     color: white;
+     text-align: center;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ }
+ .intro_social{
+     margin-top: 3%;
+     position: absolute;
+     top: 61%;
+     left: 44%; 
+ }
+ .intro_social a img{
+      width: 11%;
+ }
+ .intro_social>a{
+     margin-right: 4%;
+ }
+
+ .section_inner{
+     color: black;
+ }
+
+ .footer{
+     width: 100%;
+     height: auto;
+     background-color: rgb(61, 57, 57);
+     margin: 0 auto;
+     color: black;
+     text-align: center;
+     padding-top: 25px;
+ }
+
+ .footer_inner{
+     display: flex;
+     justify-content: space-around;
+     padding-bottom: 1%;
+ }
+
+    .footer .header_logo{
+        padding-bottom: 2px;
+    }
+
+   .footer .nav_link {
+        padding-top: 7px;
+        font-size: 18px;
+        vertical-align: center;
+    }
+
+ .social a img{
+        padding-top: 4px;
+        height: 22px;
+        width: 20px;
+        margin-left: 7px;
+ }
+ .footer_text{
+     background-color: rgb(23, 22, 22);
+     color: white;
+     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+     font-size: 10px;
+     text-align: center;
+ }
+
+ @media screen and (max-width: 768px) {
+     .header {
+         height: 30px;
+         padding-top: 3px;
+         padding-left: 4px;
+     }
+
+     .header_logo {
+         font-size: 16px;
+         padding-left: 4px;
+         float: left;
+         padding-top: 2px;
+     }
+
+     .nav_link {
+         margin: 0 4px;
+         font-size: 10px;
+         float: right;
+     }
+     .footer_text{
+         font-size: 5px;
+     }
+      .footer .nav_link {
+          padding-top: 4px;
+          font-size: 9px;
+          vertical-align: center;
+      }
+      .footer .header_logo {
+          padding-bottom: 3px;
+      }
+      .intro_text{
+          font-size: 10px;
+      }
+
+ }

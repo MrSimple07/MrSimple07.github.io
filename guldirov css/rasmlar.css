@@ -1,0 +1,77 @@
+.rasmlar{
+    padding-left: 20px;
+}
+
+h2{
+    padding-top: 10px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+main h2::after{
+    content: "";
+    width: 30px;
+    height: 3px;
+    display: block;
+    background-color: #8592a7;
+}
+.ok_subtitle{
+     padding-top: 10px;
+     padding-bottom: 15px;
+     padding-left: 30px;
+     font-size: 24px;
+     font-family: Arial,Helvetica,sans-serif;
+}
+.ok_subtitle a:hover{
+    color: blue;
+}
+
+.rasmlar_display{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px;
+}
+.rasmlar_item{
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.rasmlar_text{
+    font-size: 18px;
+    margin: 0px 12px;
+    text-align: center;
+}
+
+.rasmlar_img{
+    width: 85%;
+}
+.rasmlar_img_3{
+    width: 85%;
+}
+.boshqa_rasmlar{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+}
+
+
+@media screen and (max-width: 768px){
+    h2{
+        font-size: 20px;
+    }
+    .rasmlar_display{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .rasmlar_text{
+        font-size: 16px;
+    }
+    .boshqa_rasmlar{
+        display: grid;
+        grid-template-columns: 1fr ;
+    }
+    .ok_subtitle {
+        font-size: 16px;
+    }
+
+}
